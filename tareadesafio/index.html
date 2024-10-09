@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío - Ecuaciones y Teoremas</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="#teorema">Teorema</a></li>
+                <li><a href="#demostracion">Demostración</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="desafio">
+            <h1>Desafío</h1>
+        </section>
+        <div class="image-container">
+        <img src="pizarra.jpeg" alt="Descripción de la imagen" />
+        </div>
+        
+        <section id="teorema">
+            <h2>Teorema 1.1</h2>
+            <p>
+                Supóngase que \( f \) es continua en \( a \), y \( f(a) > 0 \). Entonces existe un número \( \delta > 0 \) tal que \( f(x) > 0 \) para todo \( x \) que satisface \( |x − a| < \delta \).
+            </p>
+        </section>
+        <div class="image-container">
+        <img src="piza.jpeg" alt="Descripción de la imagen" />
+        </div>
+
+        <section id="demostracion">
+            <h2>Demostración</h2>
+            <p>
+                Considérese el caso \( f(a) > 0 \), puesto que \( f \) es continua en \( a \), si \( \epsilon > 0 \) existe un \( \delta > 0 \) tal que, para todo \( x \), si \( |x− a| < \delta \), entonces \( |f(x)− f(a)| < \epsilon \).
+            </p>
+            <p>
+                Puesto que \( f(a) > 0 \), podemos tomar a \( f(a) \) como \( \epsilon \). Así, pues, existe \( \delta > 0 \) tal que para todo \( x \), si \( |x− a| < \delta \), entonces \( |f(x)− f(a)| < f(a) \), y esta última igualdad implica \( f(x) > 0 \). Puede darse una demostración análoga en el caso \( f(a) < 0 \); tómese \( \epsilon = −f(a) \). O también se puede aplicar el primer caso a la función \( −f \).
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Vladimir Huarachi</p>
+    </footer>
+</body>
+</html>
